@@ -2,7 +2,7 @@
 EEG = eeglab;
 
 %load data into eeglab
-EEG = pop_fileio('C:\Users\Greta\Documents\Data\Results\46\EOG\P46T03.vhdr');
+EEG = pop_fileio('C:\Users\%ADD PATH%');
 EEG = eeg_checkset( EEG );
 
 %eventlist
@@ -18,11 +18,11 @@ end_time = EEG.event(4).latency / EEG.srate;
 
 % parameter
 params = checkBlinkerDefaults(struct(), getBlinkerDefaults(EEG));
-params.subjectID = 'Stest';
+params.subjectID = '0000';
 params.experiment = 'feedback';
-params.uniqueName = 'P46T03';
+params.uniqueName = '0000';
 params.task = 'Maths';
-params.blinkerSaveFile = 'C:\Users\Greta\Documents\MATLAB';
+params.blinkerSaveFile = 'C:\Users\%ADD PATH%';
 params.dumpBlinkerStructures = true;
 params.dumpBlinkImages = true;
 params.dumpBlinkPositions = true;
