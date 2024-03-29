@@ -18,9 +18,9 @@ end_time = EEG.event(4).latency / EEG.srate;
 
 % parameter
 params = checkBlinkerDefaults(struct(), getBlinkerDefaults(EEG));
-params.subjectID = 'Stest';
+params.subjectID = '0000';
 params.experiment = 'feedback';
-params.uniqueName = 'P46T03';
+params.uniqueName = 'P00T00';
 params.task = 'Maths';
 params.blinkerSaveFile = 'C:\Users\%ADD PATH%';
 params.dumpBlinkerStructures = true;
